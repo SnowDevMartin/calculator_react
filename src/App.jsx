@@ -131,6 +131,7 @@ function App() {
             operator={operator}
             setOperator={setOperator}
             setPrevOperator={setPrevOperator}
+            prevResult={prevResult}
             setPrevResult={setPrevResult}
             setResult={setResult}
             result={result}

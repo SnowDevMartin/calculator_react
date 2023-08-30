@@ -4,7 +4,7 @@ import ButtonNumber from "./ButtonNumber";
 import ButtonOperator from "./ButtonOperator";
 import ButtonThemeColor from "./ButtonThemeColor";
 
-const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperator, setResult, setPrevResult, result, equal, setEqual, clear, setClear}) => {
+const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperator,prevResult, setResult, setPrevResult, result, equal, setEqual, clear, setClear}) => {
   
 
   return (
@@ -20,6 +20,7 @@ const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperato
             operator={operator}
             setOperator={setOperator}
             setPrevOperator={setPrevOperator}
+            prevResult={prevResult}
             setPrevResult={setPrevResult}
             setResult={setResult}
             result={result}
@@ -28,6 +29,7 @@ const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperato
             numbers={numbers}
             operator={operator}
             setOperator={setOperator}
+            prevResult={prevResult}
             setPrevOperator={setPrevOperator}
             setPrevResult={setPrevResult}
             setResult={setResult}
@@ -38,6 +40,7 @@ const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperato
             operator={operator}
             setOperator={setOperator}
             setPrevOperator={setPrevOperator}
+            prevResult={prevResult}
             setPrevResult={setPrevResult}
             setResult={setResult}
             result={result}
@@ -60,6 +63,7 @@ const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperato
             operator={operator}
             setOperator={setOperator}
             setPrevOperator={setPrevOperator}
+            prevResult={prevResult}
             setPrevResult={setPrevResult}
             setResult={setResult}
             result={result}
@@ -82,6 +86,7 @@ const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperato
             operator={operator}
             setOperator={setOperator}
             setPrevOperator={setPrevOperator}
+            prevResult={prevResult}
             setPrevResult={setPrevResult}
             setResult={setResult}
             result={result}
