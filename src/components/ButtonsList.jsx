@@ -4,7 +4,7 @@ import ButtonNumber from "./ButtonNumber";
 import ButtonOperator from "./ButtonOperator";
 import ButtonThemeColor from "./ButtonThemeColor";
 
-const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperator}) => {
+const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperator, setResult, setPrevResult, result, equal, setEqual}) => {
   
 
   return (
@@ -20,18 +20,27 @@ const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperato
             operator={operator}
             setOperator={setOperator}
             setPrevOperator={setPrevOperator}
+            setPrevResult={setPrevResult}
+            setResult={setResult}
+            result={result}
           >%</ButtonOperator>
           <ButtonOperator
             numbers={numbers}
             operator={operator}
             setOperator={setOperator}
             setPrevOperator={setPrevOperator}
+            setPrevResult={setPrevResult}
+            setResult={setResult}
+            result={result}
           >÷</ButtonOperator>
           <ButtonOperator
             numbers={numbers}
             operator={operator}
             setOperator={setOperator}
             setPrevOperator={setPrevOperator}
+            setPrevResult={setPrevResult}
+            setResult={setResult}
+            result={result}
           >×</ButtonOperator>
 
           <ButtonNumber
@@ -51,6 +60,9 @@ const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperato
             operator={operator}
             setOperator={setOperator}
             setPrevOperator={setPrevOperator}
+            setPrevResult={setPrevResult}
+            setResult={setResult}
+            result={result}
           >-</ButtonOperator>
 
           <ButtonNumber
@@ -70,6 +82,9 @@ const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperato
             operator={operator}
             setOperator={setOperator}
             setPrevOperator={setPrevOperator}
+            setPrevResult={setPrevResult}
+            setResult={setResult}
+            result={result}
           >+</ButtonOperator>
 
           <ButtonNumber
@@ -84,7 +99,10 @@ const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperato
             numbers={numbers}
             setNumbers={setNumbers}
           >3</ButtonNumber>
-          <ButtonEqual>=</ButtonEqual>
+          <ButtonEqual
+            equal={equal}
+            setEqual={setEqual}
+          >=</ButtonEqual>
 
           <ButtonClear>AC</ButtonClear>
           <ButtonNumber
