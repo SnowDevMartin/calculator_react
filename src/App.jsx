@@ -106,7 +106,7 @@ function App() {
     <>
       <div className="transition duration-500 ease-in-out dark:bg-zinc-950 bg-gray-100 flex flex-col items-center justify-end min-h-screen">
         <div className="max-w-lg w-full flex justify-end mb-4 mr-10">
-          <button
+          {/* <button
             className="bg-red-500 text-white p4 uppercase text-center text-lg"
             onClick={() => {
               console.log(`
@@ -117,7 +117,7 @@ function App() {
               El valor de resultado es: ${result}
               El valor de equal es: ${equal}
               `)}}
-          >Console Log</button>
+          >Console Log</button> */}
           <Display 
            numbers={numbers}
            operator={operator}
