@@ -4,7 +4,8 @@ import ButtonNumber from "./ButtonNumber";
 import ButtonOperator from "./ButtonOperator";
 import ButtonThemeColor from "./ButtonThemeColor";
 
-const ButtonsList = ({numbers, setNumbers, operator, setOperator, operations, setOperations}) => {
+const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperator}) => {
+  
 
   return (
     <div className="transition duration-500 ease-in-out shadow-md bg-gray-200 dark:bg-neutral-900 rounded-t-lg py-10 px-5 w-full h-full">
@@ -15,19 +16,22 @@ const ButtonsList = ({numbers, setNumbers, operator, setOperator, operations, se
         
           <ButtonThemeColor />
           <ButtonOperator
+            numbers={numbers}
             operator={operator}
             setOperator={setOperator}
-            operations={operations}
+            setPrevOperator={setPrevOperator}
           >%</ButtonOperator>
           <ButtonOperator
+            numbers={numbers}
             operator={operator}
             setOperator={setOperator}
-            operations={operations}
+            setPrevOperator={setPrevOperator}
           >÷</ButtonOperator>
           <ButtonOperator
+            numbers={numbers}
             operator={operator}
             setOperator={setOperator}
-            operations={operations}
+            setPrevOperator={setPrevOperator}
           >×</ButtonOperator>
 
           <ButtonNumber
@@ -43,9 +47,10 @@ const ButtonsList = ({numbers, setNumbers, operator, setOperator, operations, se
             setNumbers={setNumbers}
           >9</ButtonNumber>
           <ButtonOperator
+            numbers={numbers}
             operator={operator}
             setOperator={setOperator}
-            operations={operations}
+            setPrevOperator={setPrevOperator}
           >-</ButtonOperator>
 
           <ButtonNumber
@@ -61,9 +66,10 @@ const ButtonsList = ({numbers, setNumbers, operator, setOperator, operations, se
             setNumbers={setNumbers}
           >6</ButtonNumber>
           <ButtonOperator
+            numbers={numbers}
             operator={operator}
             setOperator={setOperator}
-            operations={operations}
+            setPrevOperator={setPrevOperator}
           >+</ButtonOperator>
 
           <ButtonNumber
@@ -88,7 +94,6 @@ const ButtonsList = ({numbers, setNumbers, operator, setOperator, operations, se
           <ButtonNumber
             numbers={numbers}
             setNumbers={setNumbers}
-            operations={operations}
           >,</ButtonNumber>
         </div>
       </div>

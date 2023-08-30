@@ -1,8 +1,9 @@
-const ButtonOperator = ({children, operator, setOperator, operations}) => {
+const ButtonOperator = ({children, setOperator, setPrevOperator}) => {
 
 
     const handleOperatorClick = () => {
         setOperator(children)
+        setPrevOperator(children)
     }
     
     return (

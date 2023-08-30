@@ -1,12 +1,4 @@
-import { useEffect, useState } from "react";
-
-const ButtonNumber = ({children, numbers, setNumbers, chainNumbersArr, setChainNumbersArr, operators, setOperators}) => {
-
-  const isLastCharacterOperator = () => {
-    const operators = ['+', '-', '×', '÷', '%'];
-    const lastCharacter = operations.slice(-1);
-    return operators.includes(lastCharacter);
-  };
+const ButtonNumber = ({children, numbers, setNumbers}) => {
 
   const handleNumberClick = () => {
     if (children === "," && numbers.includes(",")) {

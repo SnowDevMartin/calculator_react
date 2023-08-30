@@ -1,14 +1,14 @@
-const Display = ({numbers, operations, result }) => {
+const Display = ({numbers, result, operator, prevResult}) => {
     
 
     return (
         <div className="mb-4 text-end">
             <div className="transition duration-500 ease-in-out dark:text-gray-400 text-xl mb-4">
-                {result + ' ' + operations.slice(-1)} 
+                {prevResult + ' ' + operator} 
             </div>
             <div className="transition duration-500 ease-in-out dark:text-white text-5xl font-bold">
-                {operations.length == 0 ?
-                    '0'
+                {numbers.length == 0 ?
+                    prevResult
                     : 
                     numbers.join('') }
             </div>
