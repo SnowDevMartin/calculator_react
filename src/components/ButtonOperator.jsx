@@ -2,9 +2,6 @@ const ButtonOperator = ({children, setOperator, prevResult, setResult, setPrevRe
 
 
     const handleOperatorClick = () => {
-        if(prevResult === undefined && children != '-'){
-            return;
-        }
         if(result === undefined) {
             setResult(numbers.join(''))
             setPrevResult(numbers.join(''))
