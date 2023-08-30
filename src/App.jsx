@@ -13,7 +13,9 @@ function App() {
   const [operator, setOperator] = useState('');
   const [prevResult, setPrevResult] = useState(undefined)
   const [result, setResult] = useState(undefined)
+  
   const [equal, setEqual] = useState(false)
+  const [clear, setClear] = useState(false)
 
   function evalExpression(expressioncalc) {
     return new Function('return ' + expressioncalc)();
@@ -86,6 +88,17 @@ function App() {
     }
 
   }, [equal])
+
+  useEffect(() => {
+    if (isFirstRender) {
+      setIsFirstRender(false);
+      return;
+    }
+    setPrevResult(undefined)
+    setResult(undefined)
+    setNumbers([])
+    setOperator('')
+  },[clear])
   
   return (
     <>
@@ -123,6 +136,8 @@ function App() {
             result={result}
             equal={equal}
             setEqual={setEqual}
+            clear={clear}
+            setClear={setClear}
             />
         </div>
       </div>

@@ -4,7 +4,7 @@ import ButtonNumber from "./ButtonNumber";
 import ButtonOperator from "./ButtonOperator";
 import ButtonThemeColor from "./ButtonThemeColor";
 
-const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperator, setResult, setPrevResult, result, equal, setEqual}) => {
+const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperator, setResult, setPrevResult, result, equal, setEqual, clear, setClear}) => {
   
 
   return (
@@ -104,7 +104,10 @@ const ButtonsList = ({numbers, setNumbers, operator, setOperator, setPrevOperato
             setEqual={setEqual}
           >=</ButtonEqual>
 
-          <ButtonClear>AC</ButtonClear>
+          <ButtonClear
+            clear={clear}
+            setClear={setClear}
+          >AC</ButtonClear>
           <ButtonNumber
             numbers={numbers}
             setNumbers={setNumbers}
