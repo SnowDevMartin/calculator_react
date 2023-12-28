@@ -14,11 +14,10 @@ lo que le da una apariencia elegante y fácil de usar.
 
 ## 🔧 Cómo Usar y modificar a tu gusto
 
-1. Clona este repositorio: `git clone https://github.com/tuusuario/tucalculadora.git`
-2. Entra al directorio del proyecto: `cd tucalculadora`
+1. Clona este repositorio: `git clone https://github.com/SnowDevMartin/calculator_react.git`
+2. Entra al directorio del proyecto: `cd calculator_react`
 3. Instala las dependencias: `npm install`
 4. Inicia el servidor de desarrollo: `npm run dev`
-5. Abre tu navegador y ve a `http://localhost:3000` para ver la calculadora en acción.
 
 ## 🤝 Contribuciones
 
