@@ -5,6 +5,8 @@ Es una calculadora web desarrollada en React y construida utilizando Vite como h
 El diseño de la calculadora está inspirado en el estilo limpio y moderno Iphone, he usado algunos estilo de un modelo similar encontrado en Flutter,
 lo que le da una apariencia elegante y fácil de usar.
 
+No llega a funcionar bien, tiene mucho prop drilling, sinceramente bastante decente para ser la primera vez usando react, quizás a futuro la mejore con conocimientos más avanzados, trataría de evitar todo el prop drilling y optimizar el uso de componentes, no tenía muy claro como se usaba todo.
+
 ## 📦 Características
 
 - Interfaz de usuario moderna y atractiva, inspirada en el diseño de Flutter.
